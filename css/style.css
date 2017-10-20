@@ -1,0 +1,434 @@
+/* 全体 */
+body {
+    background: #f2f2f2;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.inner {
+    margin:0 auto;
+    width: 1100px;
+}
+
+/* header */
+header {
+    background: #fff;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.fa-flash {
+    color: #333;
+}
+
+.contact {
+    background: #74cfae;
+    float: right;
+    font-size: 12px;
+    padding: 14px 12px;
+    text-align: center;
+    width:60px;
+}
+
+.contact > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#hamburger-menu {
+    display: none;
+}
+
+/* title */
+.title {
+    padding: 250px 0;
+    margin-top: 78px;
+    text-align: center;
+}
+
+.title__main {
+    color: #74cfae;
+    font-size: 90px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.title__sub {
+    font-size: 30px;
+    color: #c0c0c0;
+}
+
+/* description */
+.description {
+    background: #74cfae;
+    color: #fff;
+}
+
+.description__inner {
+    background: url("../img/iphone.png") no-repeat  bottom left;
+    box-sizing: border-box;
+    height: 345px;
+    padding: 50px 0 0 400px;
+    text-align: center;
+}
+
+.description__title {
+    font-size: 24px;
+    padding-top: 10px;
+    margin: 20px 35px;
+}
+
+.description__text {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 100px;
+}
+
+/* works */
+.works {
+    color: #333;
+    padding: 60px 0 70px;
+}
+
+.works__title {
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.works__list1 {
+    height: 300px;
+    margin-bottom: 80px;
+    width: 1100px;
+}
+
+.works_common {
+    float: left;
+    height: 300px;
+    opacity: 0.7;
+    width: 300px;
+}
+
+.works_common:hover {
+    opacity: 1;
+}
+
+.works__list2 {
+    margin-bottom: 90px;
+}
+
+.works1 {
+    background: url("../img/01.jpg");
+}
+
+.works2 {
+    background: url("../img/02.jpg");
+}
+
+.works3 {
+    background: url("../img/03.jpg");
+}
+
+.works4 {
+    background: url("../img/04.jpg");
+}
+
+.works5 {
+    background: url("../img/05.jpg");
+}
+
+.works6 {
+    background: url("../img/06.jpg");
+}
+
+.works2,.works5 {
+    margin: 0 100px;
+}
+
+.works__text {
+    float: left;
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 80px;
+    margin-right: 90px;
+    text-align: center;
+    width: 663px;
+}
+
+.works__button {
+    background: #74cfae;
+    border: none;
+    color: #fff;
+    float: left;
+    font-size: 12px;
+    padding: 14px 20px; 
+}
+
+.works__button:hover {
+    color: #333;
+}
+
+/* skill */
+.skill {
+    background: #4e4e4e;
+    color: #fff;
+    font-size: 24px;
+    padding: 70px 0 100px;
+    text-align: center;
+}
+
+.skill > div > ul {
+    margin: 50px auto 0;
+}
+
+.skill > div > ul >li {
+    float: left;
+    font-size: 12px;
+    padding-top: 142px;
+    width: 122px;
+}
+
+li.skill2,li.skill3,li.skill4 {
+    margin-left: 204px;
+}
+
+li.skill1 {
+    background: url("../img/circle_01.png") top no-repeat;
+}
+
+li.skill2 {
+    background: url("../img/circle_02.png") top no-repeat;
+}
+
+li.skill3 {
+    background: url("../img/circle_03.png") top no-repeat;
+}
+
+li.skill4 {
+    background: url("../img/circle_04.png") top no-repeat;
+}
+
+/* sns-link */
+.sns-link {
+    box-sizing: border-box;
+    padding: 200px 0;
+}
+
+.sns-link > figure > ul {
+    height: 120px;
+    margin: 0 auto;
+    width: 740px;
+}
+
+.sns-link__items {
+    box-sizing: border-box;
+    float: left;
+    line-height: 100px;
+    padding-top: 20px;
+    text-align: center;
+    width: 185px;
+}
+
+.sns-link__items:hover {
+    background: #fff;
+}
+
+.sns-icon {
+    color: #74cfae;
+}
+
+/* footer */
+footer {
+    background: #74cfae;
+}
+
+.footer__text {
+    color: #fff;
+    font-size: 14px;
+    padding: 20px 0 25px;
+    text-align: right;
+}
+
+/* TAB 画面サイズ 1199px以下 */
+@media screen and ( max-width:1199px) {
+/* 全体 */
+inner {
+    width: 1000px;
+}
+
+/* description */
+.description {
+    padding-top: 50px; 
+}
+
+.description__inner {
+    background-position: top;
+    height: 489px;
+    padding: 295px 0 25px;
+}
+
+.description__title {
+    padding: 0 0 15px;;
+}
+
+.description__text {
+    margin: 0;
+}
+
+/* works */
+.works__list1,.works__list2 {
+    height: 900px;
+    width: 300px;
+    margin: 0 auto 80px;
+}
+
+.works_common {
+    float: none;
+}
+
+.works2,.works5 {
+    margin: 0;
+}
+
+.works3 {
+    margin-bottom: 80px;
+}
+
+.works__text {
+    float: none;
+    padding: 0;
+    margin: 0 0 40px;
+    width: 1100px;
+}
+
+.works__form {
+    text-align: center;
+}
+
+.works__button {
+    float: none;
+}
+
+/* skill */
+.skill > div > ul {
+    width: 122px;
+}
+
+.skill > div > ul >li {
+    float: none;
+}
+
+li.skill2,li.skill3,li.skill4 {
+    margin: 88px 0 0 0;
+}
+
+/* sns */
+.sns-link {
+    height: 880px;
+}
+
+.sns-link > figure > ul {
+    width: 185px;
+}
+
+.sns-link__items {
+    float: none;
+}
+
+}
+
+/* SP 画面サイズ 766px以下 */
+@media screen and ( max-width:766px) {
+
+/* 全体 */
+.inner {
+    width: 320px;
+}
+
+.fa-flash {
+    padding-left: 10px;
+}
+
+/* header */
+.contact {
+    display: none;
+}
+
+.sp-inner {
+    position: relative;
+}
+
+.navToggle {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    height: 25px;
+    padding: 10px;
+    position: absolute;
+    right: 13px;
+    top: 0;
+    width: 30px;
+}
+
+.navToggle > div {
+    position: relative;
+}
+
+.navToggle span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    border-bottom: solid 3px #999;
+}
+
+.navToggle span:nth-child(1) {
+    top:0
+}
+.navToggle span:nth-child(2) {
+    top:11px
+}
+.navToggle span:nth-child(3) {
+    top:22px
+}
+
+#hamburger-menu {
+    background: #74cfae;
+    border: none;
+    box-sizing: border-box;
+    color: #fff;
+    padding: 14px 0 14px 12px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* title */
+.title {
+    padding: 160px 0 130px;
+}
+
+.title__main {
+    font-size: 80px;
+}
+
+/* .description */
+.description__inner {
+    height: 693px;
+}
+
+/* works */
+.works__text {
+    width: 320px;
+}
+
+/* sns */
+.sns-link {
+    height: 580px;
+    padding: 50px 0;
+}
+
+}
